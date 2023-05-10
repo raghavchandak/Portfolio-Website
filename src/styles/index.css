@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Medium";
+  src: local("ChronicaProMedium"),
+    url("../fonts/font/ChronicaPro-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Futura";
+  src: local("FuturaMedium"),
+    url("../fonts/Futura/FuturaLT.woff") format("woff");
+}
+
+@font-face {
+  font-family: "FH";
+  src: local("FuturaHeavy"),
+    url("../fonts/Futura/FuturaLT-HeavyOblique.woff") format("woff");
+}
+
+.home-div {
+  margin: 2rem 5rem 0 10rem;
+  animation: 1.5s ease-out 0s 1 slideInFromLeft;
+  transition-delay: 2s;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+.home-div h1 {
+  color: white;
+  font-family: "Futura";
+  font-size: 6.5rem;
+  letter-spacing: 0.2rem;
+}
+
+.home-div .awesome {
+  color: #f65c59;
+  animation: colorchange 3s infinite alternate;
+  font-family: "Medium";
+}
+
+@keyframes colorchange {
+    0% {
+      color: #f65c59;
+    }
+  
+    20% {
+      color: #f76c69;
+    }
+  
+    40% {
+      color: #f87b79;
+    }
+  
+    60% {
+      color: #f88b88;
+    }
+  
+    80% {
+      color: #f99a98;
+    }
+  
+    100% {
+      color: #faaaa8;
+    }
+  }

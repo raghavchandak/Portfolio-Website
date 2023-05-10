@@ -1,0 +1,72 @@
+/* .center {
+  margin: 0 auto;
+}
+
+.awesome {
+  font-family: futura;
+  font-style: italic;
+
+  width: 100%;
+
+  margin: 0 auto;
+  text-align: center;
+
+  color: #313131;
+  font-size: 45px;
+  font-weight: bold;
+  position: absolute;
+  animation: colorchange 20s infinite alternate;
+  -webkit-animation: colorchange 20s infinite alternate;;
+}
+
+@keyframes colorchange {
+    0% {
+      color: #f65c59;
+    }
+  
+    20% {
+      color: #f87d7a;
+    }
+  
+    40% {
+      color: #fa9d9b;
+    }
+  
+    60% {
+      color: #fbbebd;
+    }
+  
+    80% {
+      color: #fddede;
+    }
+  
+    100% {
+      color: #ffffff;
+    }
+  }
+
+  @-webkit-keyframeskeyframes colorchange {
+    0% {
+      color: #f65c59;
+    }
+  
+    20% {
+      color: #f87d7a;
+    }
+  
+    40% {
+      color: #fa9d9b;
+    }
+  
+    60% {
+      color: #fbbebd;
+    }
+  
+    80% {
+      color: #fddede;
+    }
+  
+    100% {
+      color: #ffffff;
+    }
+  } */
