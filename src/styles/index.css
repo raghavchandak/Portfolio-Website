@@ -1,6 +1,8 @@
 * {
   margin: 0;
   padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 @font-face {
@@ -22,57 +24,99 @@
 }
 
 .home-div {
-  margin: 2rem 5rem 0 10rem;
-  animation: 1.5s ease-out 0s 1 slideInFromLeft;
-  transition-delay: 2s;
+  margin: 2vw 0 0 10vw;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.home-text {
+  animation: 0.75s ease-out 0s 1 slideInFromLeft;
+  animation-delay: 1s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+.home-img {
+  animation: 0.75s ease-out 0s 1 slideInFromRight;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  margin-left: 5vw;
 }
 
 @keyframes slideInFromLeft {
-    0% {
-      transform: translateX(-100%);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0);
-      opacity: 1;
-    }
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
   }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 
 .home-div h1 {
   color: white;
   font-family: "Futura";
-  font-size: 6.5rem;
+  font-size: 8vw;
   letter-spacing: 0.2rem;
 }
 
 .home-div .awesome {
   color: #f65c59;
-  animation: colorchange 3s infinite alternate;
+  animation: colorchange 2s infinite alternate;
   font-family: "Medium";
 }
 
 @keyframes colorchange {
-    0% {
-      color: #f65c59;
-    }
-  
-    20% {
-      color: #f76c69;
-    }
-  
-    40% {
-      color: #f87b79;
-    }
-  
-    60% {
-      color: #f88b88;
-    }
-  
-    80% {
-      color: #f99a98;
-    }
-  
-    100% {
-      color: #faaaa8;
-    }
+  0% {
+    color: #f65c59;
   }
+
+  20% {
+    color: #f76c69;
+  }
+
+  40% {
+    color: #f87b79;
+  }
+
+  60% {
+    color: #f88b88;
+  }
+
+  80% {
+    color: #f99a98;
+  }
+
+  100% {
+    color: #faaaa8;
+  }
+}
+
+/*USING MEDIA QUERIES FOR RESPONSIVE DESIGN*/
+@media only screen and (max-width: 600px) {
+  .home-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .home-div h1{
+    font-size: 10vw;
+  }
+}

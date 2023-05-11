@@ -1,72 +1,25 @@
-/* .center {
-  margin: 0 auto;
+.about-div {
+  display: flex;
+  margin: 2vw 0 0 10vw;
+  flex-direction: column;
 }
 
-.awesome {
-  font-family: futura;
-  font-style: italic;
-
-  width: 100%;
-
-  margin: 0 auto;
-  text-align: center;
-
-  color: #313131;
-  font-size: 45px;
-  font-weight: bold;
-  position: absolute;
-  animation: colorchange 20s infinite alternate;
-  -webkit-animation: colorchange 20s infinite alternate;;
+.intro {
+  display: flex;
+  animation: 1.5s ease-out 0s 1 slideInFromLeft;
+  animation-delay: 0.25s;
+  opacity: 0;
+  animation-fill-mode: forwards;
 }
 
-@keyframes colorchange {
-    0% {
-      color: #f65c59;
-    }
-  
-    20% {
-      color: #f87d7a;
-    }
-  
-    40% {
-      color: #fa9d9b;
-    }
-  
-    60% {
-      color: #fbbebd;
-    }
-  
-    80% {
-      color: #fddede;
-    }
-  
-    100% {
-      color: #ffffff;
-    }
-  }
+.intro h1 {
+  font-family: "Medium";
+  font-size: 8vw;
+}
 
-  @-webkit-keyframeskeyframes colorchange {
-    0% {
-      color: #f65c59;
-    }
-  
-    20% {
-      color: #f87d7a;
-    }
-  
-    40% {
-      color: #fa9d9b;
-    }
-  
-    60% {
-      color: #fbbebd;
-    }
-  
-    80% {
-      color: #fddede;
-    }
-  
-    100% {
-      color: #ffffff;
-    }
-  } */
+.diff-color {
+  margin-left: 1rem;
+  color: #f65c59;
+  animation: colorchange 2s infinite alternate;
+  font-family: "FH";
+}

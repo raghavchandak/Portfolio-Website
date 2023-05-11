@@ -9,7 +9,7 @@ function Navbar() {
   const handleClick = () => {
     console.log(clicked);
     setClicked(true);
-    setTimeout(() => setClicked(false), 8000);
+    // setTimeout(() => setClicked(false), 8000);
   }
 
   return (
