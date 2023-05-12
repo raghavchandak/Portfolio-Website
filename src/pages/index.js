@@ -26,7 +26,7 @@ const IndexPage = ({ data }) => {
   ) : (
     <Layout>
       <main style={{ backgroundColor: constants.BG_COLOR }}>
-        {
+        <>
           <div className="home-div">
             <div className="home-text">
               <h1>BUSY</h1>
@@ -36,7 +36,7 @@ const IndexPage = ({ data }) => {
             </div>
             <GatsbyImage image={image} className="home-img" />
           </div>
-        }
+        </>
       </main>
     </Layout>
   );

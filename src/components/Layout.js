@@ -14,17 +14,30 @@ function Layout({ children }) {
       }}
     >
       <motion.main
+        initial={{ opacity: 0, y: -200 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: 200 }}
+        transition={{
+          type: "spring",
+          mass: 0.2,
+          stiffness: 40,
+          duration: 5,
+        }}
+      >
+        <Navbar />
+      </motion.main>
+      <motion.main
         initial={{ opacity: 0, x: -200 }}
         animate={{ opacity: 1, x: 0 }}
         exit={{ opacity: 0, x: 200 }}
         transition={{
           type: "spring",
           mass: 0.2,
-          stiffness: 30,
+          stiffness: 50,
           duration: 10,
+          delay: 1
         }}
       >
-        <Navbar />
         {children}
       </motion.main>
     </div>

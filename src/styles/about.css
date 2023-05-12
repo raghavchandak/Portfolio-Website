@@ -4,12 +4,19 @@
   flex-direction: column;
 }
 
-.intro {
+.container{
+    width: 52vw;
+    height: 100vh;
+    /* overflow-y: hidden; */
+}
+
+.intro,
+.sub {
   display: flex;
-  animation: 1.5s ease-out 0s 1 slideInFromLeft;
+  animation: 1.5s ease-out 0s 1 slideInFromLeft both;
   animation-delay: 0.25s;
   opacity: 0;
-  animation-fill-mode: forwards;
+  /* animation-fill-mode: forwards; */
 }
 
 .intro h1 {
@@ -22,4 +29,55 @@
   color: #f65c59;
   animation: colorchange 2s infinite alternate;
   font-family: "FH";
+}
+
+.sub-heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sub-heading h2 {
+  text-decoration: none;  
+  font-size: 2vw;
+  font-family: "Futura";
+  color: white;
+}
+
+.sub {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.icons {
+  margin-right: 3rem;
+}
+
+.about-me {
+  margin-top: 2rem;
+  font-size: 2vw;
+  font-family: "Futura";
+  animation: 1.5s ease-out 0s 1 fadein;
+  animation-delay: 2s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+.sub:hover {
+  cursor: pointer;
+}
+
+.sub:hover .icons {
+  color: #f65c59;
+}
+
+.sub:hover .sub {
+  font-size: 10vw;
+}
+
+.section-header{
+    font-size: 6vw;
+    font-family: 'FH';
+    color: #f65c59;
+    animation: colorchange 2s infinite alternate;
 }
