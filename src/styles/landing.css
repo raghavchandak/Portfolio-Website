@@ -1,4 +1,72 @@
-.landing-main{
-    height: 100vh;
-    width: 100vw;
+.landing-main {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.landing-container {
+  height: 20vh;
+  background-color: yellow;
+  padding: 2rem;
+  transition: all 2s ease-in-out;
+  transform-origin: left;
+}
+
+.landing-open {
+  transform: perspective(1200px) translateZ(0px) translateX(0px) translateY(0px)
+    rotateY(-105deg);
+  background-color: red;
+}
+
+#scroll-container {
+  border-radius: 5px;
+  height: 15vh;
+}
+
+.scroll-icon {
+  height: 100%;
+  text-align: center;
+  /* color: white; */
+
+  /* animation properties */
+  transform: translateY(100%);
+
+  -moz-animation: scrollUp 4s linear forwards;
+  -webkit-animation: scrollUp 4s linear forwards;
+  animation: scrollUp 4s linear forwards;
+  animation-delay: 0.5s;
+}
+
+/* for Firefox */
+@-moz-keyframes scrollUp {
+  from {
+    -moz-transform: translateY(100%);
+  }
+  to {
+    -moz-transform: translateY(-300%);
+  }
+}
+
+@-webkit-keyframes scrollUp {
+  from {
+    -moz-transform: translateY(100%);
+  }
+  to {
+    -moz-transform: translateY(-300%);
+  }
+}
+
+@keyframes scrollUp {
+  from {
+    -moz-transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+  }
+  to {
+    -moz-transform: translateY(-300%);
+    -webkit-transform: translateY(-300%);
+    transform: translateY(-300%);
+  }
 }

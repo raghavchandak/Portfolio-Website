@@ -12,9 +12,9 @@ import "../styles/index.css";
 
 const IndexPage = ({ data }) => {
   console.log(data);
-  useEffect(() => {
-    setTimeout(() => setShowLanding(false), 0);
-  }, []);
+  // useEffect(() => {
+  //   setTimeout(() => setShowLanding(false), 0);
+  // }, []);
 
   const [showLanding, setShowLanding] = useState(true);
 
